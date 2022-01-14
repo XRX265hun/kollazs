@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    font-family: "Lato", sans-serif;
+    font-family: 'Ubuntu', sans-serif;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
   .sidebar {
     margin: 0;
     padding: 0;
