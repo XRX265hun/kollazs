@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+</head>
+<body>
+    <script>
+        InputEvent('processzorokbutton')
+        var processzorokbutton ='Megbocsáltok,DE NEHEZEN'
+    </script>
+    <nav>
+    <div class="sidebar">
+
+        <a href="index.html">vissza a főoldalra</a>
+        <a href="keplink.html">1.feladat</a>
+        <a href="listak.html">2.feladat</a>
+        <a href="orarend.html">3.feladat</a>
+        <a class="active" href= "formok-javaval.html">Bejelentkezőpanel</a>
+
+    </div>
+</nav>
+<div class="content">
+    <form>
+        <h4>E-Mail cím</h4>
+        <input type="email">
+        <h4>Jelszó</h4>
+        <input type="password">
+        <input type="button" value="Bevitel">
+        <h1 style="background-color: red;">regisztrációhoz szükséges adatok</h1>
+        <h4>Születési dátum</h4>
+        <input type='date'>
+        <h4>Kérem válaszzon</h4>
+        <input list='processzorok'>
+            <datalist id="processzorok">
+                <option value='Intel'></option>
+                <option value='AMD'></option>
+        </datalist>
+       <p style="font-family: 'Times New Roman', Times, serif;">ha a 'processzorok' kérdésben az 'AMD' választ adta meg, akkor nyomja be a következő gombot.</p>
+       <button onclick="alert"><input id="processzorokbutton" type='button' value="hibát vétettem, megbocsáltásért esedezem."></button>
+
+
+
+    </form>
+     
+</div>
+</body>
+</html>

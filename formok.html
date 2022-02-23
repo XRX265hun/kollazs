@@ -7,15 +7,48 @@
     <title>Bejelentkezés</title>
 </head>
 <body>
-    <div>
+    <script>
+        InputEvent('processzorokbutton')
+        var processzorokbutton ='Megbocsáltok,DE NEHEZEN'
+    </script>
+    <nav>
+    <div class="sidebar">
+
         <a href="index.html">vissza a főoldalra</a>
+        <a href="keplink.html">1.feladat</a>
+        <a href="listak.html">2.feladat</a>
+        <a href="orarend.html">3.feladat</a>
+        <a class="active" href= "formok.html">Bejelentkezőpanel</a>
+
     </div>
+</nav>
+<div class="content">
     <form>
         <h4>E-Mail cím</h4>
         <input type="email">
         <h4>Jelszó</h4>
         <input type="password">
         <input type="button" value="Bevitel">
+        <h1 style="background-color: red;">regisztrációhoz szükséges adatok</h1>
+        <h4>E-Mail cím</h4>
+        <input type="email">
+        <h4>Jelszó</h4>
+        <input type="password">
+        <h4>ismételje meg a jelszót:</h4>
+        <input type="password">
+        <h4>Születési dátum</h4>
+        <input type='date'>
+        <h4>Kérem válaszzon</h4>
+        <input list='processzorok'>
+            <datalist id="processzorok">
+                <option value='Intel'></option>
+                <option value='AMD(buzis)'></option>
+        </datalist>
+       <input type="button" value="regisztráció">
+
+
     </form>
+     
+</div>
 </body>
 </html>
