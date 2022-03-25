@@ -1,159 +1,43 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zzziauramm</title>
+    <title>Termékek</title>
     <style>
-    body {
-      margin: 0;
-      font-family: 'Ubuntu', sans-serif;
-    }
-    
-    .sidebar {
-      margin: 0;
-      padding: 0;
-      width: 200px;
-      background-color: #f1f1f1;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-    
-    .sidebar a {
-      display: block;
-      color: black;
-      padding: 16px;
-      text-decoration: none;
-    }
-     
-    .sidebar a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-    
-    .sidebar a:hover:not(.active) {
-      background-color: #555;
-      color: white;
-    }
-    
-    div.content {
-      margin-left: 200px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-    
-    @media screen and (max-width: 700px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-    }
-    
-    @media screen and (max-width: 400px) {
-      .sidebar a {
-        text-align: center;
-        float: none;
-      }
-    }
+        img {
+            width: 200px;
+            
+        }
+        td {
+            text-align: center;
+        }
     </style>
-    </head>
-    <body>
-    
-    <div class="sidebar">
-      <a href="index.html">Főoldal</a>
-      <a class="active"  href="tablazat.html">1. feladat</a>
-      <a  href="listak.html">2. feladat</a>
-      <a  href="orarend.html">3. feladat </a>
-    </div>
-    
-    <div class="content">
 </head>
+
 <body>
-    <table style="background-color: aquamarine;" border="2px">
-            <td style="color: red;">Idő</td>
-            <td>hétfő</td>
-            <td>kedd</td>
-            <td>szerda</td>
-            <td>csütörtök</td>
-            <td>péntek</td>
+    <table style="border: solid black 1px;">
+        <tr>
+            <td><img src="https://storage.googleapis.com/gamebyte/2020/11/PS1_CARDS.jpg" alt=""></td>
+            <td><img src="https://www.konzolgame.hu/wp-content/uploads/2021/01/ps2-9004.jpg" alt=""></td>
+            <td><img src="data:image/jpeg;base64,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" alt=""></td>
+            <td><img src="" alt=""></td>
         </tr>
         <tr>
-            <td>7.15-8.00</td>
-            <td style="background-color: tomato;"></td>
-            <td style="background-color: tomato;"></td>
-            <td style="background-color: tomato;"></td>
-            <td style="background-color: tomato;"></td>
-            <td>prog.alapok</td>
-        </tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>8.00-8.45</td>
-            <td>magyar</td>
-            <td>magyar</td>
-            <td style="background-color: tomato;"></td>
-            <td>matek</td>
-            <td>prog.alapok</td>
-        </tr>
-        <tr>
-            <td>8.55-9.40</td>
-            <td>történelem</td>
-            <td>matek</td>
-            <td>tesi</td>
-            <td>digitá.kultúra</td>
-            <td>magyar</td>
-        </tr>
-        <tr>
-            <td>9.50-10.35</td>
-            <td>tesi</td>
-            <td>magyar</td>
-            <td>matek</td>
-            <td>digitál.kultúra</td>
-            <td>osztályfőni</td>
-        </tr>
-        <tr>
-            <td>10.45-11.30</td>
-            <td>matek</td>
-            <td>tesi</td>
-            <td>ikt.projekt</td>
-            <td>angol</td>
-            <td>matek</td>
-        </tr>
-        <tr>
-            <td>11.40-12.25</td>
-            <td>komplex</td>
-            <td>angol</td>
-            <td>történelem</td>
-            <td>magyar</td>
-            <td>töri</td> 
-       </tr>
-        <tr>
-            <td>12.45-13.30</td>
-            <td>angol</td>
-            <td>IKT.projekt</td>
-            <td>komplex</td>
-            <td>inf.táv.</td>
-            <td style="background-color: tomato;"></td>
-        </tr>
-        <tr>
-            <td>13.35-14.20</td>
-            <td style="background-color: tomato;"></td>
-            <td>tesi</td>
-            <td style="background-color: tomato;"></td>
-            <td>inf.táv.</td>
-            <td style="background-color: tomato;"></td>
-        </tr>
-        <tr>
-            <td>14.25-15.10</td>
-            <td style="background-color: tomato;"></td>
-            <td>tesi</td>
-            <td style="background-color: tomato;"></td>
-            <td>inf.táv.</td>
-            <td style="background-color: tomato;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 </body>
+
 </html>
